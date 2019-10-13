@@ -6,6 +6,7 @@ class CalcTest {
         Scanner user = new Scanner(System.in);
         System.out.println("Podaj liczbę 1:");
         double liczba1 = user.nextDouble();
+        user.nextLine();
         System.out.println("Podaj liczbę 2:");
         double liczba2 = user.nextDouble();
         user.nextLine();
