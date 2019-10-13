@@ -9,9 +9,10 @@ class CalcTest {
         System.out.println("Podaj liczbę 2:");
         double liczba2 = user.nextDouble();
         user.nextLine();
+        user.close();
 
-        Calculator calculator = new Calculator(liczba1, liczba2);
-        double result = calculator.calc();
+        Calculator calculator = new Calculator();
+        double result = calculator.calc(liczba1, liczba2);
         System.out.println(result);
     }
 }
